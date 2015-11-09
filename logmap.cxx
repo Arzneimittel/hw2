@@ -14,9 +14,9 @@ int main(){
 	   k=x0;
 	   for(int i=1; i <= Nskip; i++)
 		   k = r*k*(1-k);
-	   for(int i=Nskip+1; i <= Nend; i++){
-	   		   x[i-(Nend-Nskip)-1] = r*k*(1-k);
-			   k=x[i-(Nend-Nskip)-1];
+	   for(int i=0; i <(Nend-Nskip); i++){
+	   		   x[i] = r*k*(1-k);
+			   k=x[i];
 	   		   //cout << r << "\t" << x[i-(Nend-Nskip)-1] << endl;
    	       }
    	       
